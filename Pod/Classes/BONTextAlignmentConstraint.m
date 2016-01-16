@@ -113,13 +113,18 @@ NSLayoutAttribute requiredLayoutAttributeForBONConstraintAttribute(BONConstraint
         case BONConstraintAttributeTop:           // fall through
         case BONConstraintAttributeCapHeight:     // fall through
         case BONConstraintAttributeFirstBaseline: // fall through
-        case BONConstraintAttributeXHeight: {
+        case BONConstraintAttributeXHeight:       // fall through
+        case BONConstraintAttributeDescender: {
             nsAttribute = NSLayoutAttributeTop;
             break;
         }
         case BONConstraintAttributeLastBaseline: // fall through
         case BONConstraintAttributeBottom: {
             nsAttribute = NSLayoutAttributeBottom;
+            break;
+        }
+        case BONConstraintAttributeHeight: {
+            nsAttribute = NSLayoutAttributeHeight;
             break;
         }
         case BONConstraintAttributeUnspecified: {

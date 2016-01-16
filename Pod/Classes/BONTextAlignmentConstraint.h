@@ -16,6 +16,9 @@ typedef NS_ENUM(NSUInteger, BONConstraintAttribute) {
     BONConstraintAttributeFirstBaseline,
     BONConstraintAttributeLastBaseline,
     BONConstraintAttributeBottom,
+    
+    BONConstraintAttributeHeight,
+    BONConstraintAttributeDescender,
 };
 
 NSString *stringFromBONConstraintAttribute(BONConstraintAttribute attribute);
